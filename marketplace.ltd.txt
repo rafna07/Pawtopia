@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="services.html">Pet Services</a></li>
+            <li><a href="marketplace.html">Marketplace</a></li>
+            <li><a href="adoption.html">Adoption</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Pet Marketplace</h1>
+        <p>Buy and sell pet supplies, food, and accessories.</p>
+    </header>
+
+</body>
+</html>

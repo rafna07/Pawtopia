@@ -1,0 +1,51 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawtopia - Pet Services</title>
+    <link rel="stylesheet" href="service.css">
+    <script defer src="service-script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body bg color="yellow">
+<!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">
+                <i class="fas fa-paw"></i>
+                <span>Pawtopia</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="community.html">Community</a>
+            <a href="adoption.html">Adoption</a>
+            <a href="service.html" class="active">Services</a>
+            <a href="marketplace.html">Marketplace</a>
+        </div>
+    </nav>
+
+    <!-- Pet Service Section -->
+    <div class="container">
+        <h1>Pet Services Directory</h1>
+        <p>Find veterinarians, grooming services, and more for your furry friends.</p>
+
+        <!-- Filter and Search -->
+        <div class="filter-box">
+            <input type="text" id="search" placeholder="Search by service or name...">
+            <select id="service-type">
+                <option value="all">All</option>
+                <option value="veterinarian">Veterinarians</option>
+                <option value="grooming">Grooming</option>
+            </select>
+        </div>
+
+        <!-- Service Listings -->
+        <div class="service-listings" id="service-list">
+            <!-- Services will be loaded dynamically -->
+        </div>
+    </div>
+
+</body>
+</html>

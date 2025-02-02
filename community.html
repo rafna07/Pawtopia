@@ -1,0 +1,158 @@
+<!-- forum.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPals - Community Forum</title>
+    <link rel="stylesheet" href="forum-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">
+                <i class="fas fa-paw"></i>
+                <span>PetPals</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="community.html" class="active">Community</a>
+            <a href="adoption.html">Adoption</a>
+            <a href="service.html">Services</a>
+            <a href="">Marketplace</a>
+        </div>
+        <div class="user-menu">
+            <button class="new-post-btn"><i class="fas fa-plus"></i> New Post</button>
+            <a href="#" class="nav-item"><i class="fas fa-bell"></i></a>
+            <a href="#" class="profile">
+                <img src="/api/placeholder/32/32" alt="Profile">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <aside class="categories">
+            <h3>Categories</h3>
+            <ul>
+                <li class="active"><i class="fas fa-star"></i> All Topics</li>
+                <li><i class="fas fa-bone"></i> Pet Care Tips</li>
+                <li><i class="fas fa-medkit"></i> Health & Nutrition</li>
+                <li><i class="fas fa-graduation-cap"></i> Training</li>
+                <li><i class="fas fa-heart"></i> Success Stories</li>
+                <li><i class="fas fa-question-circle"></i> Q&A</li>
+            </ul>
+        </aside>
+
+        <main class="forum-content">
+            <div class="forum-header">
+                <h1>Community Forum</h1>
+                <div class="forum-filters">
+                    <select class="sort-by">
+                        <option value="recent">Most Recent</option>
+                        <option value="popular">Most Popular</option>
+                        <option value="unanswered">Unanswered</option>
+                    </select>
+                    <input type="text" placeholder="Search discussions..." class="search-input">
+                </div>
+            </div>
+
+            <div class="posts-container">
+                <!-- Create Post Box -->
+                <div class="create-post-box">
+                    <img src="images/dog.jpg" alt="User" class="user-avatar">
+                    <div class="post-input">
+                        <textarea placeholder="Share your thoughts or ask a question..."></textarea>
+                        <div class="post-actions">
+                            <div class="post-attachments">
+                                <button><i class="fas fa-image"></i> Photo</button>
+                                <button><i class="fas fa-link"></i> Link</button>
+                                <button><i class="fas fa-tags"></i> Topic</button>
+                            </div>
+                            <button class="submit-post">Post</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sample Posts -->
+                <div class="post">
+                    <div class="post-votes">
+                        <button class="vote-btn"><i class="fas fa-chevron-up"></i></button>
+                        <span class="vote-count">42</span>
+                        <button class="vote-btn"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-header">
+                            <img src="images/dg.jpg" alt="User Avatar">
+                            <div class="post-info">
+                                <h3>Best food for a German Shepherd puppy?</h3>
+                                <div class="post-meta">
+                                    <span class="author">Posted by John Doe</span>
+                                    <span class="time">2 hours ago</span>
+                                    <span class="category">Health & Nutrition</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>I just got a 3-month-old German Shepherd puppy and I'm looking for recommendations on the best food for their growth and development. Any suggestions?</p>
+                        <div class="post-stats">
+                            <span><i class="fas fa-comment"></i> 15 comments</span>
+                            <span><i class="fas fa-eye"></i> 234 views</span>
+                            <button class="share-btn"><i class="fas fa-share"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-votes">
+                        <button class="vote-btn"><i class="fas fa-chevron-up"></i></button>
+                        <span class="vote-count">28</span>
+                        <button class="vote-btn"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-header">
+                            <img src="images/caat.jpg" alt="User Avatar">
+                            <div class="post-info">
+                                <h3>Tips for introducing a new cat to existing pets</h3>
+                                <div class="post-meta">
+                                    <span class="author">Posted by Sarah Smith</span>
+                                    <span class="time">5 hours ago</span>
+                                    <span class="category">Pet Care Tips</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Looking to adopt a new cat but worried about how my current cat and dog will react. Anyone have experience with this?</p>
+                        <div class="post-stats">
+                            <span><i class="fas fa-comment"></i> 8 comments</span>
+                            <span><i class="fas fa-eye"></i> 156 views</span>
+                            <button class="share-btn"><i class="fas fa-share"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="trending">
+            <h3>Trending Topics</h3>
+            <div class="trending-topics">
+                <div class="trending-item">
+                    <span class="trend-number">#1</span>
+                    <div class="trend-content">
+                        <h4>Summer Pet Care</h4>
+                        <p>324 discussions</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <span class="trend-number">#2</span>
+                    <div class="trend-content">
+                        <h4>Pet Training</h4>
+                        <p>256 discussions</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="forum-script.js"></script>
+</body>
+</html>

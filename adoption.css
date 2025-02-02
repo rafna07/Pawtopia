@@ -1,0 +1,163 @@
+:root {
+--primary-color: #4A90E2; /* Blue color for primary elements */
+--secondary-color: #2264e9; /* Light gray for backgrounds */
+--text-color: #333; /* Dark gray text */
+--border-color: #664111; /* Border color */
+--hover-color: #f3f0f5; /* Hover effect color */
+}
+
+* {
+margin: 1;
+padding: 1;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Arial', sans-serif;
+background-color: var(--secondary-color);
+color: var(--text-color);
+}
+
+.navbar {
+background: white;
+padding: 1rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items:center;
+box-shadow: 0 2px 4px rgba(182, 6, 6, 0.1);
+}
+
+.nav-brand a {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+text-decoration: none;
+color: var(--primary-color);
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.nav-links {
+display: flex;
+gap: 2rem;
+}
+
+.nav-links a {
+text-decoration: none;
+color: var(--text-color);
+padding: 0.5rem 1rem;
+border-radius: 5px;
+}
+
+.nav-links a.active {
+background-color: var(--primary-color);
+color: white;
+}
+
+.container {
+max-width: 1200px;
+margin: 2rem auto;
+display: grid;
+grid-template-columns: 200px 1fr 250px;
+gap: 2rem;
+padding: 0 1rem;
+}
+
+h1 {
+font-size: 2.5rem;
+color: var(--primary-color);
+text-align: center;
+}
+
+p {
+text-align: center;
+color: #666;
+margin-top: 0.5rem;
+}
+
+.filter-box {
+display: flex;
+justify-content: center;
+gap: 1rem;
+margin: 2rem 0;
+}
+
+#search {
+padding: 0.5rem;
+border: 1px solid var(--border-color);
+border-radius: 5px;
+width: 200px;
+}
+
+#filter-type {
+padding: 0.5rem;
+border: 1px solid var(--border-color);
+border-radius: 5px;
+background-color: white;
+}
+
+.pet-listings {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 1.5rem;
+}
+
+.pet-card {
+background: white;
+padding: 1rem;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+text-align: center;
+transition: transform 0.2s ease-in-out;
+}
+
+.pet-card:hover {
+transform: scale(1.05);
+}
+
+.pet-card img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.pet-info {
+margin-top: 1rem;
+}
+
+.pet-info h3 {
+font-size: 1.3rem;
+color: var(--primary-color);
+}
+
+.pet-info p {
+color: #666;
+font-size: 0.9rem;
+}
+
+.adopt-btn {
+display: inline-block;
+margin-top: 1rem;
+padding: 0.5rem 1rem;
+background: var(--primary-color);
+color: white;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+transition: background 0.2s ease-in-out;
+}
+
+.adopt-btn:hover {
+background: #ff7b2f;
+}
+
+@media (max-width: 768px) {
+.container {
+    grid-template-columns: 1fr;
+}
+
+.pet-listings {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+}

@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>Pawtopia - Adoption</title>
+    <link rel="stylesheet" href="adoption.css">
+    <script defer src="adoption-script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">
+                <i class="fas fa-paw"></i>
+                <span>Pawtopia</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="community.html">Community</a>
+            <a href="adoption.html" class="active">Adoption</a>
+            <a href="service.html">Services</a>
+            <a href="marketplace.html">Marketplace</a>
+        </div>
+    </nav>
+
+    <!-- Adoption Section -->
+    <div class="container">
+        <h1>Find Your New Best Friend</h1>
+        <p>Browse available pets and give them a loving home.</p>
+
+        <!-- Pet Filter -->
+        <div class="filter-box">
+            <input type="text" id="search" placeholder="Search by name or breed...">
+            <select id="filter-type">
+                <option value="all">All</option>
+                <option value="dog">Dogs</option>
+                <option value="cat">Cats</option>
+                <option value="other">Others</option>
+            </select>
+        </div>
+
+        <!-- Pet Listings -->
+        <div class="pet-listings" id="pet-list">
+            <!-- Pets will be loaded dynamically -->
+        </div>
+    </div>
+    
+
+</body>
+</html>
